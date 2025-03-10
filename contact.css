@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact{
+    height: 85vh;
+    width: 100%;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/black-abstract-dark-3840x2160-9729.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.contact form{
+    height: 400px;
+    width: 300px;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 148, 97);
+}
+.contact form:hover{
+    box-shadow: rgb(221, 221, 221) 0px 2px 4px 0px, rgb(197, 197, 197) 0px 2px 16px 0px;
+    border: none;
+}
+.contact form .main5{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+.contact form .main5 input{
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 200px;
+    
+}
+.contact form .main5 textarea{
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 200px;
+    padding: 10px;
+}
+.contact form .main5 textarea::placeholder{
+    color: rgb(197, 197, 197);
+}
+.contact form .main5 input::placeholder{
+    color: rgb(197, 197, 197);
+}
+.contact form .main5 button{
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    transition: 0.2s;
+}
+.contact form .main5 button:hover{
+    box-shadow: rgb(221, 221, 221) 0px 2px 4px 0px, rgb(197, 197, 197) 0px 2px 16px 0px;
+}
+
+
+@media(max-width:400px){
+    .contact{
+        height: auto;
+    }
+    .contact form{
+        margin: 5% 0px;
+    }
+    .contact form{
+        margin: 10% 0px;
+        width: 85%;
+    }
+    .contact form .main5 input{
+        width: 80%;
+    }
+    .contact form .main5 textarea{
+        width: 80%;
+    }
+    .contact form .main5 h1{
+        font-size: 25px;
+    }
+}

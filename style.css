@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navdiv nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+.navdiv nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navdiv nav ul:nth-child(2) li{
+    padding: 5px 10px;
+    transition: 0.2s;    
+    border-radius: 10px;
+}
+.navdiv nav ul li:hover{
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px, rgb(255, 255, 255) 0px 2px 16px 0px;
+}
+
+.navdiv ul:nth-child(1) h1{
+    font-size: 40px;
+}
+.navdiv ul:nth-child(2){
+    width: 30%;
+    justify-content: space-between;
+}
+.container{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('https://img.freepik.com/free-photo/plain-dark-blue-wall-product-background_53876-110773.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container .main{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    transition: 0.3s;
+    
+}
+.container .main:hover{
+    background-color: rgb(13, 34, 37);
+    box-shadow: rgb(161, 161, 161) 0px 2px 4px 0px, rgb(155, 155, 155) 0px 2px 16px 0px;
+}
+.container .main1{
+    height: 420px;
+    width: 380px;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .main1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.container .main1:hover{
+    box-shadow: rgb(221, 221, 221) 0px 2px 4px 0px, rgb(197, 197, 197) 0px 2px 16px 0px;
+    background-color: rgb(33, 82, 90);
+}
+.container .main1 img:hover{
+    transform: scale(1.1);
+    
+}
+.container .main h1{
+    font-size: 40px;
+}
+.container .main .btndiv{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.container .main .btndiv button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.container .main .btndiv button:hover{
+    text-decoration: underline;
+    box-shadow: rgb(221, 221, 221) 0px 2px 4px 0px, rgb(197, 197, 197) 0px 2px 16px 0px;
+    outline: none;
+}
+
+
+@media(max-width:950px){
+    .container{
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .container .main{
+        margin-bottom: 5%;
+    }
+    .container .main1{
+        margin-top: 5%;
+    }
+    .navdiv ul:nth-child(1) h1{
+        font-size: 25px;
+    }
+    .navdiv ul:nth-child(2){
+        width: 50%;
+    }
+}
+
+@media(max-width:530px){
+    .navdiv nav{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .navdiv ul:nth-child(1){
+        margin-top: 2%;
+    }
+    .navdiv ul:nth-child(2){
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    .container .main1{
+        height: 400px;
+        width: 90%;
+    }
+    .container .main{
+        width: 90%;
+    }
+    .container .main h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:330px){
+    .navdiv nav ul:nth-child(2){
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .navdiv nav ul:nth-child(1) h1{
+        font-size: 20px;
+    }
+    .container .main1{
+        height: 350px;
+        width: 90%;
+    }
+    .container .main h1{
+        font-size: 15px;
+    }
+    .container .main h2{
+        font-size: 15px;
+    }
+    .container .main h4{
+        font-size: 10px;
+    }
+    .container .main p{
+        font-size: 12px;
+    }
+    .container .main .btndiv button{
+        padding: 5px;
+    }
+}
